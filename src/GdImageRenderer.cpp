@@ -103,11 +103,6 @@ bool GdImageRenderer::setBarStyle(
         return false;
     }
 
-    if (bar_gap < 1) {
-        log(Error) << "Invalid bar gap: minimum 1\n";
-        return false;
-    }
-
     bar_width_ = bar_width;
     bar_gap_ = bar_gap;
     bar_style_rounded_ = bar_style_rounded;
